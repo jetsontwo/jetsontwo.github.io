@@ -16,8 +16,16 @@
 	    background-size: cover;
 	  	height:100%;
 	  }
-	  html{
+	  html, .container-table{
 	  	height: 100%;
+	  }
+
+	  .container-table {
+    	display: table;
+	  }
+	  .vertical-center-row {
+	      display: table-cell;
+	      vertical-align: middle;
 	  }
     </style>
     <link href="css/bootstrap-responsive.css" rel="stylesheet">
@@ -43,7 +51,6 @@
 	        <ul class="nav">
 	          <li><a href="index.html">Home</a></li>
 	          <li class="active"><a href="about.html">About</a></li>
-	          <li><a href="index.html">Contact</a></li>
 	          <li><a href="https://github.com/jetsontwo">Github</a></li>
 	          <li><a href="https://jetsontwo.itch.io">Itch.io</a></li>
 	        </ul>
@@ -52,7 +59,13 @@
 	  </div>
 	</div>
 
-	<div class="hero-unit">
-		hello
+	<div class="container container-table" stlye="width:80%">
+		<div class="row vertical-center-row">
+			<div class="col-md-4 col-md-offset-4" style="background: #FFFFFFAA">
+				<h1 class="text-center">About Me</h1>
+				<p class="text-center">My name is Andrew Smith and I'm a game developer, student, and gaming enthusiast. My passion for games grew beyond just playing them and I turned to creating my own experience along with friends and other developers to make some games I'm pretty proud of. You can check them all out on the Home page and either play the games or check out any of the code on my projects since they are all publically posted on Github. I've been developing games for since 2012, starting with ActionScript 3 with support from my parents who bought me books and encouraged me. From there, the spark was set, and I've learned the Unity and Unreal Engines, several programming languages (C++, C#, Java, Python, SQL, HTML, CSS), and several other amazing programs for creating and sharing code. All of these experiences helped me to create better projects and feel the excitement of game development from start to finish and from several perspectives such as designer, programmer, and producer. I hope you enjoy my site and please try out some of the games if they interest you and leave a comment if you have any suggestinons. Thanks for visiting!</p>
+			</div>
+
+		</div>
 	</div>
 </body>
